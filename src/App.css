@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+body{
+  background-color: #000;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #000000 inset !important;  /* Match input background */
+  -webkit-text-fill-color: #ffffff !important;              /* Match your input text color */
+  caret-color: #ffffff !important;                          /* Optional: White blinking cursor */
+  font-family: inherit !important;                          /* Keep the same font */
+  transition: background-color 9999s ease-in-out 0s;
+}
