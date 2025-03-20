@@ -34,10 +34,10 @@ const Profile = ({ userProfile, username }) => {
   const { profile_photo, profile_banner } = profileData;
 
   const profilePicUrl = profile_photo
-    ? `http://127.0.0.1:8000${profile_photo}`
+    ? `https://surya23.pythonanywhere.com/${profile_photo}`
     : "/default-profile.jpg";
   const bannerUrl = profile_banner
-    ? `http://127.0.0.1:8000${profile_banner}`
+    ? `https://surya23.pythonanywhere.com/${profile_banner}`
     : "/default-banner.jpg";
 
   const handleEditToggle = () => setIsEditable(!isEditable);
