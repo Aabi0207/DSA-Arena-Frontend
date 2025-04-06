@@ -139,7 +139,7 @@
     }
 
     .user-info-social-container{
-      max-width: 25%;
+      max-width: 65%;
       margin-right: 0px;
     }
 
@@ -166,9 +166,4 @@
     .logo-info span{
       font-size: 12px;
     }
-
-    .action-btns-social{
-      flex-direction: column;
-    }
-
   }

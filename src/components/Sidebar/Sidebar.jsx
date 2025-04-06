@@ -32,17 +32,13 @@ const Sidebar = ({ activeSection = "sheet" }) => {
       });
   }, []);
 
-  const handleComingSoon = () => {
-    setAlertMessage("Coming Soon!");
-  };
-
   const toggleMobileSidebar = () => {
     setIsMobileSidebarOpen((prev) => !prev);
   };
 
   const handleDSAHeaderClick = () => {
     setIsExpanded((prev) => !prev); // Toggle expand/collapse
-    setIsMobileSidebarOpen(false);
+    // setIsMobileSidebarOpen(false);
   };
 
   const handleSheetClick = (sheetId) => {

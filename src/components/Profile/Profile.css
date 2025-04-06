@@ -94,6 +94,7 @@
   .below-section{
     width: 90%;
     margin: 0px auto;
+    margin-bottom: 30px;
   }
 
   
@@ -113,6 +114,7 @@
 
   .below-section{
     width: 80%;
+    flex-direction: column;
   }
   
 }

@@ -12,6 +12,10 @@
     font-weight: 800;
 }
 
+.leader-board{
+    margin-bottom: 20px;
+}
+
 .first:hover{
     background-color: #2a2a2aab;
 }
@@ -34,6 +38,7 @@
     .first{
         width: 80%;
         font-size: 12px;
+        margin-right: 30px;
     }
 
     .others{
