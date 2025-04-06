@@ -5,7 +5,12 @@ import { ClipboardCheck, Bookmark, CirclePlus } from "lucide-react";
 import { useAuth } from "../../contexts/AuthContext";
 import HoverMessage from "../HoverMessage/HoverMessage";
 
-const Question = ({ question, onStatusChange, onNotesClick, isSavedView = false }) => {
+const Question = ({
+  question,
+  onStatusChange,
+  onNotesClick,
+  isSavedView = false,
+}) => {
   const [isSolved, setIsSolved] = useState(question.is_solved);
   const [isSaved, setIsSaved] = useState(question.is_saved);
   const { user } = useAuth();
@@ -146,9 +151,11 @@ const Question = ({ question, onStatusChange, onNotesClick, isSavedView = false 
       </div>
 
       <div className="checkbox difficulty-icon-box">
-        <span className={`difficulty ${question.difficulty.toLowerCase()}`}>
-          {question.difficulty}
-        </span>
+        <HoverMessage message={"Difficulty"}>
+          <span className={`difficulty ${question.difficulty.toLowerCase()}`}>
+            {question.difficulty}
+          </span>
+        </HoverMessage>
       </div>
 
       <div className="checkbox">
