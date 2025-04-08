@@ -354,5 +354,5 @@ pre{
   background-color: #121212;
   touch-action: pan-y; /* Allow vertical scrolling */
   overflow-y: auto; /* Enable vertical scroll if needed */
-  max-height: 400px; /* Set a max height to enable scrolling */
+  /* max-height: 400px; */
 }
